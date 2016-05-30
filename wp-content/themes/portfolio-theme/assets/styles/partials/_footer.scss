@@ -1,0 +1,55 @@
+/*==============================
+=            Footer            =
+==============================*/
+
+
+/*Footer*/
+
+footer {
+  background: $theme-salmon;
+  color: $white;
+
+  a {
+	color: inherit;
+	&:hover {
+	  color: $theme-aqua;
+	}
+
+  }
+
+  ul {
+
+	li {
+	  margin: 30px auto;
+	}
+
+  }
+
+  .contact {
+
+	a {
+	  display: block;
+	}
+
+  }
+
+  @include breakpoint($medium){
+	.middle-side {
+	  	text-align: center;
+	  }
+
+	  .right-side {
+	  	text-align: right;
+	  }
+  }
+
+}
+
+.contact-li {
+
+  a {
+	display: block;
+	white-space: nowrap;
+  }
+
+}

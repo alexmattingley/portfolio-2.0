@@ -1,0 +1,46 @@
+/*=================================
+=            Variables            =
+=================================*/
+
+
+
+// Colors
+$theme-aqua: #339D8E;
+$theme-salmon: #FF8973;
+$light-grey: #cdcdcd;
+$dark-grey: #696969;
+$white: #fff;
+$black: #000;
+$text-light: $white;
+$text-dark: $black;
+
+// Breakpoints
+$x-tiny: 320px;
+$tiny: 480px;
+$small: 768px;
+$medium: 992px;
+$large: 1200px;
+$x-large: 1440px;
+$xx-large: 1700px;
+$xxx-large: 2000px;
+
+// Fonts
+$serif: serif;
+$sans-serif: sans-serif;
+$font: monda;
+$headline: offside;
+
+// Typography  ! This should be used in conjunction with the font-size() @mixin ¡
+$h1: 48px;
+$h2: 36px;
+$h3: 21.6px;
+$h4: 18px;
+$h5: 14.4px;
+$h6: 18px;
+
+// Default Spacing 
+$space: 30px;
+
+//file paths
+
+$images-folder:'../../assets/images';

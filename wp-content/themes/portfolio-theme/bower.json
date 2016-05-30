@@ -1,0 +1,45 @@
+{
+  "name": "sage",
+  "homepage": "https://roots.io/sage/",
+  "authors": [
+    "Ben Word <ben@benword.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "modernizr": "2.8.2",
+    "owl.carousel": "*",
+    "skrollr": "~0.6.29",
+    "animate.css-scss": "~3.1.0",
+    "mixitup": "~2.1.9",
+    "magnific-popup": "~1.0.0",
+    "matchHeight": "matchheight#~0.6.0",
+    "formalize": "*",
+    "bootstrap-sass": "bootstrap-sass-official#~3.3.6",
+    "font-awesome": "fontawesome#~4.5.0"
+  },
+  "overrides": {
+    "modernizr": {
+      "main": "./modernizr.js"
+    },
+    "owl.carousel": {
+      "main": [
+        "./dist/owl.carousel.js",
+        "./dist/assets/owl.carousel.css"
+      ]
+    },
+    "matchHeight": {
+      "main": "./jquery.matchHeight-min.js"
+    },
+    "formalize": {
+      "main": [
+        "./assets/js/jquery.formalize.js"
+      ]
+    },
+    "bootstrap-sass-official": {
+      "main": [
+        "./assets/javascripts/bootstrap.min.js"
+      ]
+    }
+  }
+}

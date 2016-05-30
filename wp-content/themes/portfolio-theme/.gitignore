@@ -1,0 +1,9 @@
+dist
+dist/*
+bower_components
+bower_components/*
+node_modules
+node_modules/*
+todo_list
+todo_list/mysql_connect.php
+todo_list/*

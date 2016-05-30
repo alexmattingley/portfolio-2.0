@@ -1,0 +1,329 @@
+/*page wide styles*/
+
+a {
+  &:hover, &:focus {
+    text-decoration: none;
+  }
+
+  .glyphicon-menu-down.text-center {
+    display: block;
+    color: $theme-salmon;
+  }
+}
+
+i.glyphicon-menu-down {
+  color: $theme-salmon;
+  margin-left: $space / 3;
+}
+
+.container {
+  padding-left: $space / 3;
+  padding-right: $space / 3;
+  @include breakpoint($large){
+    padding-left: $space;
+    padding-right: $space;
+  }
+}
+
+/*loading landing page*/
+
+.loading-screen {
+  text-align: center;
+  color: white;
+  background: $theme-aqua; 
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 9000;
+  h1 {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+
+/*Work Section*/
+
+.work-block {
+
+  a, p {
+    color: $white;
+  }
+
+  h5 {
+    margin: $space auto;
+    font-size: 1.7em;
+
+    a {
+      color: $theme-aqua;
+    }
+  }
+
+  h2 {
+    color: $theme-aqua;
+  }
+
+  li {
+  
+  height: 290px;
+
+  @include breakpoint($medium){
+    margin: $space auto;
+  }
+  
+  @include breakpoint($xx-large){
+     height: 400px;
+  }
+}
+
+
+
+  ul.list-unstyled {
+    overflow: hidden;
+  }
+  
+}
+
+.project-row {
+  position: relative;
+}
+
+.text-cover {
+  background: rgba(255, 137, 115,.4);
+  border: 1px solid $white;
+  width: 100%;
+  height: 100%;
+
+  a {
+
+    &.a_wrap {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }   
+  }
+}
+
+.text-container {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 25%;
+  z-index: 100;
+  h3{
+    margin-top: 0px;
+  }
+}
+
+.indiv-project {
+  padding: 10% 10%;
+  background-size: cover!important;
+  height: 100%;
+}
+
+@include breakpoint($medium){
+
+  .text-cover {
+    position: absolute;
+    z-index: 0;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+
+    a {
+
+      &.a_wrap {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
+      
+    }
+
+    &::before, &::after {
+      position: absolute; /*This is really important, and will not work without position absolute*/
+      content: '';
+      border: 1px solid $white;
+      top: 0%;
+      left: 0%;
+      height: 100%;
+      width: 100%;
+      transform: scale(1);
+      transition: .5s;
+      background: rgba(0,0,0,0);
+    }
+
+  }
+
+  .text-container {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 50%;
+    z-index: 100;
+    transform: translateY(-100%);
+    height: 33%;
+
+    p {
+        display: none;
+    }
+  }
+
+  .indiv-project {
+    position: relative;
+    background-size: cover!important;
+    height: 100%;
+    &:hover {
+
+      .text-cover::before, .text-cover::after {
+          transform:scale(.8,.8);
+          background: rgba(255, 137, 115,.4);
+      }
+    } 
+  }
+}
+
+
+/*Work CTA*/
+.work-cta {
+  color: white;
+  background: $theme-salmon;
+  text-align: center;
+  h2{
+    margin-bottom: 30px;
+  }
+
+}
+
+
+
+/*Skills Block*/
+
+.skills-block {
+  background: $theme-aqua;
+  color: $white;
+
+  h2 {
+    color: $white;
+  }
+
+  i {
+    display: block;
+  }
+
+  h5 {
+    
+    a {
+      margin: $space auto;
+      font-size: 1.7em;
+      color: $white;
+      text-decoration: none;
+    }
+
+  }
+  li {
+    &.col-sm-4 {
+      padding-top: $space;
+      padding-bottom: $space;
+      min-height: 200px;
+      transition: all 0.5s ease;
+
+      &:hover {
+        background: white;
+        color: $theme-aqua;
+      }
+    }
+  }
+
+  .container-fluid {
+    overflow: hidden;
+  }
+
+}
+
+/*contact block*/
+
+.contact-block {
+  background: $white;
+
+  a {
+    display: block;
+    color: $dark-grey;
+    white-space: nowrap;
+    &:hover {
+      color: $theme-salmon;
+    }
+  }
+
+  .right-side {
+    margin-top: $space;
+    @include breakpoint($small){
+      margin-top: 0px;
+    }
+  }
+  h2 {
+    color: #696969;
+    margin-top: 0px;
+  }
+}
+
+.wpcf7 {
+
+  label {
+     color: $dark-grey;
+  }
+
+div.wpcf7-mail-sent-ok {
+  color: $theme-aqua;
+  border-color: $theme-aqua;
+  margin: 0;
+}
+
+  %input-styles {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    min-height: 30px;
+  }
+
+  input {
+    @extend %input-styles;
+  }
+
+  textarea {
+    height: 100px;
+    @extend %input-styles;
+  }
+
+  input[type=submit] {
+    transition: all 0.5s ease;
+    background: $theme-aqua;
+    color: $white;
+    border: 2px solid $white;
+    padding: 10px 16px;
+    font-size: inherit;
+    text-transform: uppercase;
+    font-weight: inherit;
+
+    &:hover {
+      color: $theme-aqua;
+      background: $white;
+      border: 2px solid $theme-aqua;
+      border-radius: 0px;
+    }
+  }
+
+}
+

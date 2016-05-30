@@ -1,0 +1,16 @@
+{
+  "name": "grizzly-theme",
+  "description": "Grizzly Starter Theme",
+  "type": "wordpress-theme",
+  "require": {
+      "composer/installers": "~1.0"
+  },  
+  "homepage": "http://madebygrizzly.com",
+  "authors": [
+    {
+      "name": "Team Grizzly",
+      "email": "hello@madebygrizzly.com",
+      "homepage": "http://madebygrizzly.com"
+    }
+  ]
+}

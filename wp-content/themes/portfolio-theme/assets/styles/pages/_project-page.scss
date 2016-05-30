@@ -1,0 +1,36 @@
+/*Project pages*/
+
+.project_description {
+	margin-bottom: 50px;
+
+	p, h4, h2 {
+		margin-bottom: 30px;
+	}
+	
+	@include breakpoint($small){
+		padding: 0px;
+	}
+
+}
+
+.indiv-project-page {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.project_screenshots {
+	
+	img {
+		max-width: 100%;
+		height: auto;
+		border: 5px solid black;
+		border-radius: 5px;
+		margin: 30px auto;
+		padding: 0px;
+		width: auto;
+		display: block;
+		@include breakpoint($small){
+			border: 10px solid black;
+		}
+	}
+}

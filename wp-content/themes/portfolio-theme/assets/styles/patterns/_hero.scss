@@ -1,0 +1,35 @@
+/*============================
+=            Hero            =
+============================*/
+
+.hero-banner {
+  background: url($images-folder + '/k39.JPG') no-repeat;
+  min-height: 100vh;
+  height: auto;
+  color: $theme-aqua;
+  background-size: cover;
+  background-attachment: fixed;
+
+  h1 {
+    text-transform: lowercase;
+  }
+
+  p {
+    font-size: 21px;
+    margin-bottom: $space;  
+  }
+  
+  .hero-text {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    text-transform: lowercase;
+    @media ( min-width: 768px ) and ( min-height: 500px ){
+      padding-top: 15%;
+    }
+
+    a {
+      display: none;
+    }
+  }
+
+}

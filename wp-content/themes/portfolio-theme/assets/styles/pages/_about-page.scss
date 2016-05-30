@@ -1,0 +1,23 @@
+/*about*/
+
+.about-block {
+	clear: both;
+	padding-top: $space;
+	padding-bottom: $space;
+	color: grey;
+
+	.text-block {
+		margin-top: $space;
+		@include breakpoint($small) {
+			margin-top: 0px;
+		}
+	}
+
+	img {
+		height: auto;
+		width: 100%;
+		max-width: 350px;
+		display: block;
+		margin: auto;
+	}
+}
