@@ -28,10 +28,10 @@
 
 
   /***********************
-  Method Name: ;
+  Method Name: remove load;
   Params: None
-  Purpose: Create type effect in hero banner.
-  Globals: blinking_cursor, type_boolean, end_typing, current_string_index. targe_dom, output_string, min_interval, max_interval
+  Purpose: Remove Loading screen when the javascript is ready to run, and then run the the typeEffect function.
+  Globals: N/A
   returns: None
   ***********************/
 
